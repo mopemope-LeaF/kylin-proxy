@@ -3,7 +3,7 @@ from flask import jsonify
 from github import Github
 
 app = Flask(__name__)
-g = Github("6bdb81ff0791e0d49d655e39f6d9eee35cd5e790")
+g = Github()
 
 
 @app.route('/repos/<owner>/<repo>/pulls/<int:pull_number>')
